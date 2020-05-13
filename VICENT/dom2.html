@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <script src="dom2.js"></script>
+    <style>
+        button { cursor: pointer; }
+        table { border-collapse: collapse; }
+        th, td { border: 1px solid black; padding: 8px; }
+        .col1 { width: 300px; font-weight: bold; }
+        .col2 { width: 200px; }
+        .col3 { width: 100px; text-align: center; }
+        #resultado { text-align: right; }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th class="col1">Alimento</th>
+                <th class="col2">Calorias</th>
+                <th class="col3"><button id="botonAgregar">+</button></th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="col1">Total calorias:</td>
+                <td class="col2" id="resultado">0</td>
+                <td class="col3">
+                    <button id="botonVaciar">VACIAR</button>
+                </td>
+                <td class="col4">
+                <button id="botonCalcular">CALCULAR</button>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
