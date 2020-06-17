@@ -1,0 +1,41 @@
+{# CLIENTE #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="container mt-3">
+  <h1>Tienes dudas a la hora de elegir tu pala? Entonces dinos tus dudas.</h1>
+
+  <form action="" method="get">
+    <p>Nombre: <input type="text" name="nombre" size="40"></p>
+      <p>Apellidos: <input type="text" name="nombre" size="40"></p>
+      <p>Año de nacimiento: <input type="number" name="nacido" min="1900"></p>
+      <p>Correo electronico: <input type="text" name="nombre" size="40"></p>
+      <p>Sexo:
+      <input type="radio" name="hm" value="h"> Hombre
+      <input type="radio" name="hm" value="m"> Mujer
+      </p>
+<div class="gif">
+  <img src="img/giphy.webp" alt="">
+</div>
+<p>
+  <label for="control1">Informanos  sobre tus dudas:</label>
+    <select class="form-control" id="control1" name="control1">
+      <option>Elige tu duda.</option>
+      <option>Saber mi nivel.</option>
+      <option>Como elegir una pala.</option>
+      <option>Duracion de palas.</option>
+      <option>Otra: Escribir en el recuadro inferior..</option>
+    </select>
+</p>
+<p>
+  <label for="consulta">Consulta:</label>
+  <textarea class="form-control" rows="3" id="comentarios" name="comentarios"></textarea>
+</p>
+<p>
+  <input type="submit" value="Enviar">
+  <input type="reset" value="Borrar">
+</p>
+</form>
+</div>
+{% endblock %}

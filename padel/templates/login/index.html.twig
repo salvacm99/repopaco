@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<!-- content-wrap -->
+<div class="container mt-3">
+
+      <!-- login -->
+      <section id="login" class="clearfix">
+
+            <h1>Login</h1>
+
+            <div class="primary">
+
+                <p class="intro">Introduce tus datos de usuario para iniciar la sesión.
+                </p>
+                <form method="post" action="#" id="loginform">
+
+                    <div>
+                        <p>Credenciales</p>
+                    </div>
+
+                    <div>
+                        <label>Usuario <span class="required">*</span></label>
+                        <input name="user" type="text" id="user" value="" />
+                    </div>
+
+                    <div>
+                        <label>Contraseña <span class="required">*</span></label>
+                        <input name="pasword" type="password" id="password" value="" />
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Entrar" class="button">
+                        <input type="reset" value="Reset" class="button">
+                    </div>
+
+                </form>
+            </div>
+
+
+
+      </section>
+
+</div>
+
+{% endblock %}

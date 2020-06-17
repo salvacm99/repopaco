@@ -1,0 +1,50 @@
+{# COMPRA #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="container mt-3">
+
+ <div class="jumbotron text-center text-black" style="background-image:url(img/red.png); background-size: cover;" alt="encabezado">
+   <h1>Venta de material para la practica de padel en Valencia</h1>
+ </div>
+ <!-- PRODUCTOS -->
+ <div class="container mt-3">
+
+  <div class="row">
+    <div class="col-6 bg-primary">
+      <h3>PALAS.</h3><img src="img/PALA1.png" width="80" height="80" alt="logo">
+      <p>Para poder ir mejorando en el mundillo del padel.</p>
+      <div class="row">
+        <div class="col-3">Plastico(Irrompible)</div>
+        <div class="col-3">Carbono(Muy duradera)</div>
+        <div class="col-3">Grafeno(Mas durabilidad que el carbono)</div>
+        <div class="col-3">Aleacion carbono + grafeno(Buen tacto de bola, control y durabilidad)</div>
+      </div>
+    </div>
+    <div class="col-6 bg-success">
+      <h3>Nuestras zapatillas.</h3><img src="img/zapato1.png" width="80" height="80" alt="logo">
+      <p>Para tener un buen agarre dentro de la pista.</p>
+      <div class="row">
+        <div class="col-3">Aprendiz.</div>
+        <div class="col-3">Nivel medio.</div>
+        <div class="col-3">Nivel alto.</div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 bg-success">
+      <h3>EQUIPAJES OFICIALES.</h3><img src="img/equipo1.png" width="80" height="80" alt="logo">
+      <p>Quieres sentirte como un profesional dentro de las pistas?</p>
+      <div class="row">
+        <div class="col-6">Equipaje SIUX.</div>
+      </div>
+    </div>
+    <div class="col-6 bg-primary">
+      <h3>BOLAS.</h3><img src="img/bolas24.png" width="80" height="80" alt="logo">
+      <p>Las mejores bolas del mundo.</p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

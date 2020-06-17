@@ -1,0 +1,50 @@
+.textoNuestro{
+  text-align: center;
+}
+
+.ec-stars-wrapper {
+	/* Espacio entre los inline-block (los hijos, los `a`)
+	   http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
+	font-size: 0;
+	/* Podríamos quitarlo,
+		pero de esta manera (siempre que no le demos padding),
+		sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+		también se esté haciendo hover a alguna estrella */
+	display: inline-block;
+}
+.ec-stars-wrapper a {
+	text-decoration: none;
+	display: inline-block;
+	/* Volver a dar tamaño al texto */
+	font-size: 32px;
+	font-size: 2rem;
+
+	color: #888;
+}
+
+.ec-stars-wrapper:hover a {
+	color: rgb(39, 130, 228);
+}
+/*
+ * El selector de hijo, es necesario para aumentar la especifidad
+ */
+.ec-stars-wrapper > a:hover ~ a {
+	color: #888;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: transparent; /* Set a background color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  border-radius: 15px; /* Rounded corners */
+}
+
+#myBtn:hover {
+  background-color: transparent; /* Add a dark-grey background on hover */
+}
