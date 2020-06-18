@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Entity\{Productos};
+use App\Entity\Productos;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use Doctrine\ORM\EntityManagerInterface;
@@ -14,11 +14,12 @@ class CompraController extends AbstractController
      */
     public function show(EntityManagerInterface $entityManager)
     {
-        $productos=$this->getFoto();
-
+        $producto1=$this->getDoctrine()
+            ->getRepository(Productos::class)
+            ->find(1);
         return $this->render('compra/index.html.twig', [
             'title' => 'Productos',
-            'productos' => $productos
+            'producto1' => $producto1
         ]);
     }
 
@@ -26,7 +27,7 @@ class CompraController extends AbstractController
     {
         $productos = $this->getDoctrine()
             ->getRepository(Productos::class)
-            ->find();
+            ->find(1);
 
         return  $productos;
 
